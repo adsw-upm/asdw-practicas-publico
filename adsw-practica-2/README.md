@@ -25,19 +25,13 @@ Para llegar al objetivo final de la práctica 2, vamos a tener que realizar dos 
       * `List<String> getShortestPath(String ActorSource, String ActorDestination)`
   
 # Requisitos para importar el proyecto inicial **ADSW-practica2-2022.zip**
-Os hemos facilitado el proyecto **ADSW-practica2-2022.zip** para empezar con la práctica 2, este código hace referencia al proyecto **lab1-ordenacion**, no es necesario tener resuelta la práctica 1 correctamente. 
+Os hemos facilitado el proyecto **ADSW-practica2-2022.zip** para empezar con la práctica 2, este código hace referencia al proyecto **lab1-ordenacion**. 
 
-Solo queremos usar la clase `Movie`. Es posible que tengamos que cambiar la visibilidad de los atributos *title* y *cast* de la clase `Movie` y ponerlos a *public* para que sean accesibles desde nuestro proyecto. Como mostramos en el siguiente cuadro:
+Solo queremos usar la clase `Movie`. Para conseguir el título y casting de una Movie, podemos usar sus métodos getters:
 
 ```java
-/**
-* Título de la película en inglés
-*/
-public String title;
-/**
-* Elenco de la película. Ejemplo: "Tom Hanks", "Matt Damon"...
-*/
-public List<String> cast;
+public List<String> getCast()
+public String getTitle()
 ```
 
 # Requisitos para empezar la Práctica 2
@@ -123,7 +117,7 @@ classDiagram
           public Iterable<DirectedEdge> pathTo(int v)
       }
 ```
-# Descripción del diagrama de clases.
+### Descripción del diagrama de clases.
 
 Atributos de clase `GraphLoader`:
 
