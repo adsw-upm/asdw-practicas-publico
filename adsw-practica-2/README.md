@@ -78,7 +78,7 @@ Os proporcionamos un proyecto para continuar con la clase `GraphLoader` con todo
 2. El nuevo método a implementar: `List<String> getShortestPath(String ActorSource, String ActorDestination)`
 
 
-# Diagrama de clases
+# Diagrama de clases 🎥
 ```mermaid	
 classDiagram
       GraphLoader ..> Movie
