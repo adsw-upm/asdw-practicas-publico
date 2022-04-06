@@ -25,9 +25,11 @@ Para llegar al objetivo final de la práctica 2, vamos a tener que realizar dos 
       * `List<String> getShortestPath(String ActorSource, String ActorDestination)`
   
 # Requisitos para importar el proyecto inicial **ADSW-practica2-2022.zip**
-Os hemos facilitado el proyecto **ADSW-practica2-2022.zip** para empezar con la práctica 2, este código hace referencia al proyecto **lab1-ordenacion**. 
+Os hemos facilitado el proyecto **ADSW-practica2-2022.zip** para empezar con la práctica 2. 
 
-Solo queremos usar la clase `Movie`. Para conseguir el título y casting de una Movie, podemos usar sus métodos getters:
+El código de `Movie` lo tenemos incluido en el proyecto, no hace falta importar ni referenciar el Lab 1 o Práctica 1.
+
+Solo queremos usar la clase `Movie` para conseguir el título y casting. Lo conseguiremos usando sus métodos getters:
 
 ```java
 public List<String> getCast()
@@ -35,9 +37,7 @@ public String getTitle()
 ```
 
 # Objetivo de la Práctica 2
-En el laboratorio 2 a través de los métodos anteriores cargamos en un objeto la clase `GraphLoader` toda la información referente a las Películas.
-
-De tal manera que en un objeto de dicha clase tiene un atributo de clase o campo `g` que representa el grafo que hemos cargado al ejecutar el método `void loadGraph(List<Movie> movies, int actorNumber)`
+En el laboratorio 2 a través de los métodos cargamos en un objeto la clase `GraphLoader` toda la información referente a las Películas usando por debajo un grafo de la librería de **Princeton** `EdgeWeightedDigraph`, que tendremos como atributo de clase o campo `g` que hemos cargado al ejecutar el método `void loadGraph(List<Movie> movies, int actorNumber)`
 
 En la práctica 2 queremos un método que calcule en camino mínimo entre dos actores con la siguiente signatura:
 
@@ -72,9 +72,9 @@ Con el resultado anterior, se entiende que:
 👀NOTA: si no hay camino entre dos actores, es decir, no se encuentra un conjunto de actores donde hayan colaborado entre películas. EL MÉTODO DEBE DEVOLVER NULL.
 
 # Proyecto para empezar
-Os proporcionamos un proyecto para empezar con la clase `GraphLoader`:
+Os proporcionamos un proyecto para empezar con la clase `GraphLoader` con todos los métodos vacíos:
 
-1. Donde tendremos que copiar los métodos descritos anteriormente del laboratorio 2
+1. Donde tendremos que copiar los métodos descritos anteriormente del [laboratorio 2](https://github.com/adsw-upm/adsw-laboratorios/tree/main/adsw-lab-2)
 2. El nuevo método a implementar: `List<String> getShortestPath(String ActorSource, String ActorDestination)`
 
 
