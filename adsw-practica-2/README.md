@@ -34,16 +34,6 @@ public List<String> getCast()
 public String getTitle()
 ```
 
-# Requisitos para empezar la Práctica 2
-
-La práctica 2 se entiende como una continuación del Laboratorio 2. Por lo tanto, deberá haber finalizado los métodos de laboratorio 2.
-[Aquí tiene el enunciado del laboratorio 2](https://github.com/adsw-upm/adsw-laboratorios/tree/main/adsw-lab-2)
-Debes copiar los siguientes métodos a la clase `GraphLoader` de la práctica 2:
- 1. `Integer getActorID(String actor)`
- 2. `void addEdge(String actor1, String actor2, Movie movie)`
- 3. `List<String[]> getActorsPairs(Movie movie)`
- 4. `void loadGraph(List<Movie> movies, int actorNumber)`
-     
 # Objetivo de la Práctica 2
 En el laboratorio 2 a través de los métodos anteriores cargamos en un objeto la clase `GraphLoader` toda la información referente a las Películas.
 
@@ -153,14 +143,14 @@ El código para buscar el camino mínimo en grafo según el modelo de **Princeto
      */
 ```
      
-# Consideraciones a tener en cuenta.
+## Consideraciones a tener en cuenta.
 1. Para saber el vértice que corresponde a un actor podemos usar el mapa `Map<String, Integer> actorsMap`.
 2. Pero si queremos hacer la búsqueda inversa, y saber el nombre del actor a partir del número de vértice, podemos invertir el diccionario anterior con el siguiente método: `Map<Integer, String> getActorsMapInverted()` Este método nos devuelve justo el diccionario invertido. Podremos buscar por un número de vertice en concreto y obtendremos el nombre del actor.
 3. Para saber cúal es la película que se corresponde a un `DirectedEgde`, esa información la tenemos en `Map<DirectedEdge, Movie> moviesMap`
+4. Aclaraciones sobre el método `List<String[]> getActorsPairs(Movie movie)` (Realizado en el laboratorio 2)
+Este método debe devolver en una lista, todos los pares de colaboraciones de dos actores en una película. Pero cada pareja debe estar una vez, y da igual quien sea el primero o el segundo. Según el ejemplo del grafo de arriba: una pareja de actores sería "Clint Howard" y "Diane Lane" o "Diane Lane" y "Clint Howard". Cualquiera de las dos formas de contar la pareja es equivalente, pero el método no devolver las dos.
 
-# Aclaraciones sobre el método `List<String[]> getActorsPairs(Movie movie)`
-(Realizado en el laboratorio 2)
-Este método debe devolver en una lista, todos los pares de colaboraciones de dos actores en una película. Es decir, en el ejemplo del grafo de arriba.
+Siguiendo el ejemplo del grafo de arriba.
 
 Si preguntamos por el `getActorsPairs(Movie movie)`, de la película **My Dog Skyp** debería devolver una lista con los siguientes valores: 
 
