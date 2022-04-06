@@ -72,9 +72,9 @@ Con el resultado anterior, se entiende que:
 👀NOTA: si no hay camino entre dos actores, es decir, no se encuentra un conjunto de actores donde hayan colaborado entre películas. EL MÉTODO DEBE DEVOLVER NULL.
 
 # Proyecto para empezar
-Os proporcionamos un proyecto para empezar con la clase `GraphLoader` con todos los métodos vacíos:
+Os proporcionamos un proyecto para continuar con la clase `GraphLoader` con todos los métodos vacíos:
 
-1. Donde tendremos que copiar los métodos descritos anteriormente del [laboratorio 2](https://github.com/adsw-upm/adsw-laboratorios/tree/main/adsw-lab-2)
+1. Donde tendremos que copiar los métodos desarrollados en el [laboratorio 2](https://github.com/adsw-upm/adsw-laboratorios/tree/main/adsw-lab-2)
 2. El nuevo método a implementar: `List<String> getShortestPath(String ActorSource, String ActorDestination)`
 
 
