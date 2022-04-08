@@ -192,7 +192,7 @@ El método también estaría mal si devuelve una pareja con un actor que sea él
 *	**No se aceptarán entregas fuera de plazo bajo ningún concepto, ni entregar la práctica con otros medios**.
 * **Los dos miembros de un grupo tienen que entregar la práctica**
 
-#Anexo 2: AVISO MUY IMPORTANTE
+# Anexo 2: AVISO MUY IMPORTANTE
 
 Se recuerda a los alumnos que el trabajo es individual o grupos de dos, y que la copia de entregas supondrá́ el suspenso en la asignatura de forma automática, tanto para quien copia como para quien se deja copiar. En esta práctica, los métodos desarrollados en el laboratorio 2 deben ser el resultado del trabajo de cada grupo.
 
