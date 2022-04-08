@@ -61,6 +61,7 @@ JPA -- Off Course --- CM([Carmen Machi])
 HC -- Man of Steel --- DL([Diane Lane])
 KB -- My Dog Skip --- DL([Diane Lane])
 TH -- That Thing you Do! --- CH([Clint Howard])
+KB -- My Dog Skip --- CH
 CH -- My Dog Skip --- DL
 ```
 
